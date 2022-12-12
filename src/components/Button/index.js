@@ -1,12 +1,13 @@
+import React from 'react'
 
 import { ButtonContainer } from './styles';
 
-const Button = ({label, onClick}) => {
-    return (
-      <ButtonContainer onClick={onClick} type="button">
-       {label}
-      </ButtonContainer>
-    );
-  }
-  
-  export default Button;
+function Button({onClick}) {
+  return (
+    <ButtonContainer onClick={onClick}>
+       Buscar
+    </ButtonContainer>
+  )
+}
+
+export default Button
